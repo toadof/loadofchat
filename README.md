@@ -1,5 +1,5 @@
 # loadofchat
-
+l
 Anonymous real-time chat — share a short room code, no sign-up required. Built with Spring Boot (STOMP/WebSocket) and React (Vite).
 
 ## Live URLs
