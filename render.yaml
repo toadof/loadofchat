@@ -1,21 +1,21 @@
 services:
-  # Spring Boot backend (Web Service with Docker)
+  # FastAPI backend (Web Service with Docker)
   - type: web
-    name: loadofchat-backend
+    name: understoodqnB
     runtime: docker
     dockerfilePath: ./backend/Dockerfile
     dockerContext: ./backend
     plan: free
-    healthCheckPath: /api/health
+    healthCheckPath: /health
     envVars:
       - key: ALLOWED_ORIGINS
         sync: false
       - key: PORT
-        value: 8080
+        value: 8000
 
   # React frontend (Static Site)
   - type: web
-    name: loadofchat-frontend
+    name: understoodqn
     runtime: static
     rootDir: frontend
     buildCommand: npm install && npm run build
